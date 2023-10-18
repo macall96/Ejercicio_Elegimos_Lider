@@ -83,6 +83,7 @@ const control = {
             seleccionados.removeChild(seleccionados.firstChild);
         }
         localStorage.clear();
+        this.votosEmitidos=0;
         numVotos.value = 0;
         delegado.textContent = '';
         subdelegado.textContent = '';
