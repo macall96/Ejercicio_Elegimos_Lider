@@ -71,15 +71,15 @@ const control = {
     },
 
     eliminarProgreso(){
-        while(this.listaVotados.length > 0) {
+        while (this.listaVotados.length > 0) {
             this.listaVotados.pop();
         }
         while (seleccionados.firstChild) {
             seleccionados.removeChild(seleccionados.firstChild);
         }
         localStorage.clear();
-        this.votosEmitidos=0;
-        numVotos.textContent = this.votosEmitidos;
+        this.votosEmitidos = 0; 
+        numVotos.textContent = this.votosEmitidos; 
         delegado.textContent = '';
         subdelegado.textContent = '';
         
