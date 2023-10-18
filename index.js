@@ -8,11 +8,6 @@ const numVotos = document.getElementById("numVotos")
 const botonGuardar = document.getElementById("btnGuardar");
 const botonEliminar = document.getElementById("btnEliminar");
 
-//Al iniciciar la aplicación, si existe listaVotados en el local storage, lo recupera y lo parsea a array formato
-//JSON para poder pintar la situación que fue guardada la última vez, tanto el número de votos que se realizaron 
-//como las personas que recibieron los votos  
-
-
 //Este objeto controlará todo
 
 const control = {
@@ -84,9 +79,10 @@ const control = {
         }
         localStorage.clear();
         this.votosEmitidos=0;
-        numVotos.value = 0;
+       // numVotos.value = 0;
         delegado.textContent = '';
         subdelegado.textContent = '';
+        
     }
 
 }
