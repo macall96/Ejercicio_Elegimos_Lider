@@ -79,7 +79,7 @@ const control = {
         }
         localStorage.clear();
         this.votosEmitidos=0;
-       // numVotos.value = 0;
+        numVotos.textContent = this.votosEmitidos;
         delegado.textContent = '';
         subdelegado.textContent = '';
         
