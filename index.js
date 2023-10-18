@@ -83,13 +83,14 @@ const control = {
             seleccionados.removeChild(seleccionados.firstChild);
         }
         localStorage.clear();
-        numVotos.textContent = 0;
+        numVotos.value = 0;
         delegado.textContent = '';
         subdelegado.textContent = '';
     }
 
 }
 
+//Si hay algo guardado en el localStorage...
 if (localStorage.getItem('listaVotados')){
     const arrayGuardado = localStorage.getItem('listaVotados');
     const arrayRecuperado = JSON.parse(arrayGuardado);
